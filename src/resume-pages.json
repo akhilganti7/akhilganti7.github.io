@@ -1,0 +1,164 @@
+{
+  "engineering": {
+    "pages": [
+      {
+        "img": "engineering-p1.webp",
+        "width": 1600,
+        "height": 2071,
+        "links": [
+          {
+            "href": "mailto:akhilganti7@gmail.com",
+            "x": 32.71,
+            "y": 2.43,
+            "w": 15.67,
+            "h": 1.49
+          },
+          {
+            "href": "http://www.linkedin.com/in/akhilganti7",
+            "x": 51.99,
+            "y": 2.43,
+            "w": 22.4,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7",
+            "x": 78,
+            "y": 2.43,
+            "w": 5.24,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/Stock-Compass",
+            "x": 47.63,
+            "y": 58.62,
+            "w": 14,
+            "h": 1.49
+          },
+          {
+            "href": "https://aclanthology.org/2025.sicon-1.3/",
+            "x": 45.21,
+            "y": 73.32,
+            "w": 6.29,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/DecepBench",
+            "x": 52.37,
+            "y": 73.32,
+            "w": 14,
+            "h": 1.49
+          }
+        ]
+      }
+    ],
+    "text": "Akhil Ganti\nToronto, Ontario ● akhilganti7@gmail.com ● www.linkedin.com/in/akhilganti7 ● GitHub\nSoftware Engineering + Ivey AEO Student at Western University\nEDUCATION\nWestern University | London, ON Sept. 2025\nSchool of Applied Sciences, Bachelor of Engineering with Advanced Entry Opportunity (AEO) to the Ivey Business School (Co-op)\nKey Accomplishments\n● Activities and Societies: Telugu Student Union VP of Finance, Western Formula One Team, Western Investment Club (WIC),\nPre-Business Student Network (PBSN), Case Competitions, Western Scholarship of Distinction\nPROFESSIONAL EXPERIENCE\nPayments Analyst May 2026 - Sept. 2026\nWorkplace Safety and Insurance Board (WSIB) | Toronto, Ontario | On-site\n● Scrutinized and processed over 9000 active claims within the WSIB system, expediting tasks for various teams\n● Computational Excel of high-quantity data sets and large documents\n● Validated over $1.8M in approved benefit payments to injured workers within the WSIB system, supporting long-term\nrehabilitation and financial relief for millions of injured Canadian workers\nSoftware Engineer Feb. 2026 - Present\nMomentumMind Research | Mississauga, Ontario | Remote\n● Developed and deployed a scalable application using React, Tailwind CSS, and Node.js, implementing CI/CD\nworkflows in GitHub Actions that cut deployment time by 45% and minimized production errors.\n● Designed and shipped a real-time payment system using Stripe Webhooks\nApplied ML Researcher Nov. 2025 - Jul. 2025\nAlgoverse | San Francisco, California | Remote\n● Analyze findings of large data sets, upwards of 10,000 data points\n● Create, fine-tune, and benchmark models using cloud GPU interfaces, such as Hugging Face and RunPod\n● Collaborate and facilitate research meetings to meet deadlines and automate billing updates\nResearch Intern, Nobel Laureate Eric Betzig’s (Nobel Prize in Chemistry, 2014) Lab Jun. 2024 - Sept. 2024\nUniversity of California, Berkeley | Berkeley, California | On-site\n● Analyzed petabytes of data from multi-million-dollar microscopes using Python scripts and advanced libraries\n● Used advanced apparatus, such as high-technology microscopes, to prepare a microscope for intense data collection of\nnumerous cancer cells from fish and LLC-PK1 cells\n● Nuclei labelling of LLC-PK1 cells using various Python libraries (PyTorch, NumPy, Pandas, Matplotlib), ImageJ, and Fiji\n● Trained and fine-tuned cell-segmentation models to detect abnormalities within the dataset\nPROJECTS\nStock Compass: Full-Stack Financial Analysis Application, GitHub Repository Jul. 2026\n● Engineered a full-stack web application for automated stock and portfolio analysis, using React, Python, yFinance API\n● Implemented a DCF Valuation model with real-time sensitivity analysis, with parameters set by the user\n● Modulated financial metrics dashboard, displaying P/E Ratio, EBITDA, debt-to-equity, ROE, free cash flow, and more\nTech Stack: React, Python, Flask, yfinance, Recharts (data visualization), Vercel, Render\nLight Data Logging Unit April 2026\n● Improved a costly, pre-existing solution, developing a light sensor that autonomously records data without human input\n● Developed a MATLAB program that takes 10+ raw data types from the sensor and uploads them as an XLSX file, and turns\nit into interactive visuals for four key variables, incorporating complex data analysis tools for engineers and stakeholders\nPublished ML Researcher: Co-Author of DecepBench - read here, GitHub Repository Jul. 2025\n● Designed a benchmark that uses the DOLOS dataset, a culmination of over 1700+ multimodal inputs (video, audio, text)\n● Research published at ACL SiCon 2025 (Vienna, Austria), NeurIPS (San Diego, California), MASC-SLL, and ACL GEM\nconferences (<10% acceptance rate), offered to travel internationally to present in front of leading companies, experts\nVOLUNTEER EXPERIENCE\nVice President of Finance Nov. 2025 - Present\nTelugu Student Union| London, Ontario | On-site\n● Core executive board member of a cultural club with over 300 members, backed by Western University\n● Perform financial modelling for various events, sponsorships, memberships, and university funding\nSKILLS\nTechnicals: Java, Python (Pandas, NumPy, scikit-learn), Machine Learning, Jupyter Notebook, CUDA, Bash, Git\nHard Skills: CAD (SolidWorks, Onshape), Data Analytics (Excel, MATLAB), Technical Writing (LaTeX, Overleaf), Literature Review\nSoft Skills: Collaboration, Communication, Trilingual in English, French, Telugu"
+  },
+  "business": {
+    "pages": [
+      {
+        "img": "business-p1.webp",
+        "width": 1600,
+        "height": 2071,
+        "links": [
+          {
+            "href": "mailto:akhilganti7@gmail.com",
+            "x": 32.5,
+            "y": 4.56,
+            "w": 15.67,
+            "h": 1.49
+          },
+          {
+            "href": "http://www.linkedin.com/in/akhilganti7",
+            "x": 51.78,
+            "y": 4.56,
+            "w": 22.4,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7",
+            "x": 77.79,
+            "y": 4.56,
+            "w": 5.24,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/Stock-Compass",
+            "x": 54.21,
+            "y": 67.01,
+            "w": 14,
+            "h": 1.49
+          },
+          {
+            "href": "https://aclanthology.org/2025.sicon-1.3/",
+            "x": 45.21,
+            "y": 80.23,
+            "w": 6.29,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/DecepBench",
+            "x": 52.37,
+            "y": 80.23,
+            "w": 14,
+            "h": 1.49
+          }
+        ]
+      }
+    ],
+    "text": "Akhil Ganti\nToronto, Ontario ● akhilganti7@gmail.com ● www.linkedin.com/in/akhilganti7 ● GitHub\nBridging Engineering and Business Applications | Software Engineering + Ivey AEO Student at Western University\nEDUCATION\nWestern University | London, ON | Sept. 2025\nSchool of Applied Sciences, Bachelor of Engineering with Advanced Entry Opportunity (AEO) to the Ivey Business School (Co-op)\nKey Accomplishments\n● Activities and Societies: Telugu Student Union VP of Finance, Western Formula One Team, Western Investment Club (WIC),\nPre-Business Student Network (PBSN), Case Competitions, Western Scholarship of Distinction\nPROFESSIONAL EXPERIENCE\nPayments Analyst May 2026 - Sept. 2026\nWorkplace Safety and Insurance Board (WSIB) | Toronto, Ontario | On-site\n● Scrutinized and processed over 9000 active claims within the WSIB system, expediting tasks for various teams\n● Computational Excel of high-quantity data sets and large documents\n● Validated over $1.8M in approved benefit payments to injured workers within the WSIB system, supporting long-term\nrehabilitation and financial relief for millions of injured Canadian workers\nInvestment Analyst April 2026 - Present\nBaird Agustine | Los Gatos, California | Remote\n● Conducted market analysis and financial modelling on AI sector companies, supporting investment thesis development\nfor a $50M AUM portfolio\n● Synthesized market trends and complex data sets into strategic, investor-ready briefings and valuation reports\nPrivate Equity Analyst April 2026 - Present\nArc Reactor Capital | Austin, Texas | Remote\n● Authored a comprehensive global landscape report, analyzing over 50+ autonomous venture studios, documenting\ntechnology stacks, and operating models to inform and fund investment strategy\n● Conducted various levels of research to synthesize findings into strategic frameworks and investment theses for portfolio\nenhancement\nFinancial Analyst Feb. 2026 - Present\nMomentumMind Research | Mississauga, Ontario | Hybrid\n● Constructed financial models and forecasting tools to analyze company performance and market trends for investor\nclients\n● Authored proprietary research reports, synthesizing dynamics of the AI market, ascertaining investment opportunities\nfor hedge funds and institutional client bases\nApplied ML Researcher Nov. 2025 - Jul. 2025\nAlgoverse | San Francisco, California | Remote\n● Analyze findings of large data sets, upwards of 10,000 data points\n● Create, fine-tune, and benchmark models using cloud GPU interfaces, such as Hugging Face and RunPod\n● Collaborate and facilitate research meetings to meet deadlines and automate billing updates\nLEADERSHIP & EXTRACURRICULAR ACTIVITIES\nProject - Stock Compass: Full-Stack Financial Analysis Application, GitHub Repository Jul. 2026\n● Engineered a full-stack web application for automated stock and portfolio analysis, using React, Python, yFinance API\n● Implemented a DCF Valuation model with real-time sensitivity analysis, with parameters set by the user\n● Modulated financial metrics dashboard, displaying P/E Ratio, EBITDA, debt-to-equity, ROE, free cash flow, and more\nTech Stack: React, Python, Flask, yfinance, Recharts (data visualization), Vercel, Render\nVice President of Finance Jun. 2026 - Present\n● Core executive board member of a cultural club with over 300 members, backed by Western University\n● Perform financial modelling for various events, sponsorships, memberships, and university funding\nPublished ML Researcher: Co-Author of DecepBench - read here, GitHub Repository Jul. 2025\nDesigned a benchmark that uses the DOLOS dataset, a culmination of over 1700+ multimodal inputs (video, audio, text)\n● Research published at ACL SiCon 2025 (Vienna, Austria), NeurIPS (San Diego, California), MASC-SLL, and ACL GEM\nconferences (<10% acceptance rate)\n● Offered the opportunity to travel internationally to present research at prestigious conferences in front of industry-leading\ncompanies, professionals, and innovators within the AI and tech space\nSKILLS\nTechnicals: Java, Python (Pandas, NumPy, scikit-learn), Machine Learning, Jupyter Notebook, CUDA, Bash, Git\nHard Skills: CAD (SolidWorks, Onshape), Data Analytics (Excel, MATLAB), Technical Writing (LaTeX, Overleaf)\nSoft Skills: Collaboration, Communication, Trilingual in English, French, Telugu"
+  },
+  "combined": {
+    "pages": [
+      {
+        "img": "combined-p1.webp",
+        "width": 1600,
+        "height": 2071,
+        "links": [
+          {
+            "href": "mailto:akhilganti7@gmail.com",
+            "x": 32.5,
+            "y": 2.43,
+            "w": 15.67,
+            "h": 1.49
+          },
+          {
+            "href": "http://www.linkedin.com/in/akhilganti7",
+            "x": 51.78,
+            "y": 2.43,
+            "w": 22.4,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7",
+            "x": 77.79,
+            "y": 2.43,
+            "w": 5.24,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/Stock-Compass",
+            "x": 47.63,
+            "y": 57.66,
+            "w": 14,
+            "h": 1.49
+          },
+          {
+            "href": "https://aclanthology.org/2025.sicon-1.3/",
+            "x": 45.21,
+            "y": 72.36,
+            "w": 6.29,
+            "h": 1.49
+          },
+          {
+            "href": "https://github.com/akhilganti7/DecepBench",
+            "x": 52.37,
+            "y": 72.36,
+            "w": 14,
+            "h": 1.49
+          }
+        ]
+      }
+    ],
+    "text": "Akhil Ganti\nToronto, Ontario ● akhilganti7@gmail.com ● www.linkedin.com/in/akhilganti7 ● GitHub\nBridging Engineering and Business Applications | Software Engineering + Ivey AEO Student at Western University\nEDUCATION\nWestern University | London, ON Sept. 2025\nSchool of Applied Sciences, Bachelor of Engineering with Advanced Entry Opportunity (AEO) to the Ivey Business School (Co-op)\nKey Accomplishments\n● Activities and Societies: Telugu Student Union VP of Finance, Western Formula One Team, Western Investment Club (WIC),\nPre-Business Student Network (PBSN), Western AI, Case Competitions, Western Scholarship of Distinction\nPROFESSIONAL EXPERIENCE\nPayments Analyst May 2026 - Sept. 2026\nWorkplace Safety and Insurance Board (WSIB) | Toronto, Ontario\n● Scrutinized and processed over 9000 active claims within the WSIB system, expediting tasks for various teams\n● Computational Excel of high-quantity data sets and large documents\n● Validated over $1.8M in approved benefit payments to injured workers within the WSIB system, supporting long-term\nrehabilitation and financial relief for millions of injured Canadian workers\nPrivate Equity Analyst April 2026 - Present\nArc Reactor Capital | Austin, Texas\n● Authored a comprehensive global landscape report, analyzing over 50+ autonomous venture studios, documenting\ntechnology stacks, and operating models to inform and fund investment strategy\n● Conducted various levels of research to synthesize findings into strategic frameworks and investment theses for portfolio\nenhancement\nInvestment Analyst April 2026 - Present\nBaird Agustine | Los Gatos, California | Remote\n● Conducted market analysis and financial modelling on AI sector companies, supporting investment thesis development\nfor a $50M AUM portfolio\n● Synthesized market trends and complex data sets into strategic, investor-ready briefings and valuation reports\nResearch Intern, Nobel Laureate Eric Betzig’s (Nobel Prize in Chemistry, 2014) Lab Jun. 2024 - Sept. 2024\nUniversity of California, Berkeley | Berkeley, California\n● Used advanced apparatus, such as high-technology microscopes, to prepare a microscope for intense data collection of\nnumerous cancer cells from fish and LLC-PK1 cells\n● Nuclei labelling of LLC-PK1 cells using various Python libraries (PyTorch, NumPy, Pandas, Matplotlib), ImageJ, and Fiji\n● Trained and fine-tuned cell-segmentation models to detect abnormalities within various datasets\nPROJECTS\nStock Compass: Full-Stack Financial Analysis Application, GitHub Repository Jul. 2026\n● Engineered a full-stack web application for automated stock and portfolio analysis, using React, Python, yFinance API\n● Implemented a DCF Valuation model with real-time sensitivity analysis, with parameters set by the user\n● Modulated financial metrics dashboard, displaying P/E Ratio, EBITDA, debt-to-equity, ROE, free cash flow, and more\nTech Stack: React, Python, Flask, yfinance, Recharts (data visualization), Vercel, Render\nLight Data Logging Unit April 2026\n● Improved a costly, pre-existing solution, developing a light sensor that autonomously records data without human input\n● Developed a MATLAB program that takes 10+ raw data types from the sensor and uploads them as an XLSX file, and turns\nit into interactive visuals for four key variables, incorporating complex data analysis tools for engineers and stakeholders\nPublished ML Researcher: Co-Author of DecepBench - read here, GitHub Repository Jul. 2025\n● Designed a benchmark that uses the DOLOS dataset, a culmination of over 1700+ multimodal inputs (video, audio, text)\n● Research published at ACL SiCon 2025 (Vienna, Austria), NeurIPS (San Diego, California), MASC-SLL, and ACL GEM\nconferences (<10% acceptance rate), offered to travel internationally to present in front of leading companies, experts\nVOLUNTEER EXPERIENCE\nVice President of Finance Nov. 2025 - Present\nTelugu Student Union| London, Ontario\n● Core executive board member of a cultural club with over 300 members, backed by Western University\n● Perform financial modelling for various events, sponsorships, memberships, and university funding\nSKILLS\nTechnicals: Java, Python (Pandas, NumPy, scikit-learn), Machine Learning, Jupyter Notebook, CUDA, Bash, Git\nHard Skills: CAD (SolidWorks, Onshape), Data Analytics (Excel, MATLAB), Technical Writing (LaTeX, Overleaf), Literature Review\nSoft Skills: Collaboration, Communication, Trilingual in English, French, Telugu"
+  }
+}
