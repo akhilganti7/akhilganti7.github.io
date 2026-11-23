@@ -284,7 +284,7 @@ export const EXPERIENCE = [
     company: 'Arc Reactor Capital',
     title: 'Private Equity Analyst',
     team: '',
-    dates: 'TODO: Apr 2026 – end month',
+    dates: 'Apr 2026 – Sep 2026',
     summary: 'Private equity analysis for an AI-native venture studio in Austin, Texas (remote).',
     did: [
       'Wrote a global landscape report on 50+ autonomous venture studios, documenting their technology stacks and operating models.',
@@ -298,7 +298,7 @@ export const EXPERIENCE = [
     company: 'Baird Augustine',
     title: 'Investment Analyst',
     team: '',
-    dates: 'TODO: Apr 2026 – end month',
+    dates: 'Apr 2026 – Sep 2026',
     summary: 'Investment analysis for a firm in Los Gatos, California (remote).',
     did: [
       'Market analysis and financial modelling on AI-sector companies, supporting investment theses for a $50M AUM portfolio.',
@@ -307,21 +307,6 @@ export const EXPERIENCE = [
     ],
     impact: 'Supported investment theses for a $50M AUM portfolio.',
     tags: ['Financial modelling', 'Valuation', 'AI sector'],
-  },
-  {
-    slug: 'algoverse',
-    company: 'Algoverse',
-    title: 'Applied ML Researcher',
-    team: '',
-    dates: 'Nov 2024 – Jul 2025', // CHECK: your resume says "Nov. 2025 - Jul. 2025", which ends before it starts
-    summary: 'Applied machine learning research program in San Francisco (remote), where I co-authored DecepBench.',
-    did: [
-      'Analyzed data sets of 10,000+ data points.',
-      'Built, fine-tuned and benchmarked models on cloud GPUs through Hugging Face and RunPod.',
-      'Ran research meetings to keep the team on deadline.',
-    ],
-    impact: 'Co-authored DecepBench, published at ACL SiCon 2025.',
-    tags: ['Machine learning', 'Hugging Face', 'RunPod'],
   },
 ]
 
