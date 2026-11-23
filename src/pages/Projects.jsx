@@ -3,7 +3,7 @@ import { Decode, Reveal } from '../components/bits.jsx'
 import GithubActivity from '../components/GithubActivity.jsx'
 import NotFound from './NotFound.jsx'
 import { PROJECTS } from '../data.js'
-import { T, isTodo } from '../lib/fx.jsx'
+import { T, isTodo, has } from '../lib/fx.jsx'
 
 const statusClass = (s) => (s === 'Concept' ? 'concept' : s === 'In progress' ? 'progress' : '')
 
@@ -36,6 +36,8 @@ export function ProjectDetail() {
   if (!p) return <NotFound />
   const links = Object.entries(p.links).filter(([, v]) => v)
   const label = { github: 'GitHub', demo: 'Live demo', huggingface: 'Hugging Face' }
+  const challenges = p.challenges.filter((c) => has(c.problem))
+  const results = p.results.filter((r) => has(r.value))
 
   return (
     <div className="page wrap">
@@ -46,7 +48,7 @@ export function ProjectDetail() {
         <div className="case-meta">
           <div><b>status</b><span>{p.status}</span></div>
           <div><b>year</b><span>{p.year}</span></div>
-          <div><b>role</b><span><T v={p.role} /></span></div>
+          {has(p.role) && <div><b>role</b><span><T v={p.role} /></span></div>}
         </div>
         {links.length > 0 && (
           <div className="btns" style={{ marginTop: 26 }}>
@@ -57,10 +59,12 @@ export function ProjectDetail() {
         )}
       </header>
 
-      <section className="section sec-grid">
-        <div className="sec-label"><Decode text="Purpose" />the problem, and who it's for</div>
-        <div className="prose"><p className="lead"><T v={p.purpose} /></p></div>
-      </section>
+      {has(p.purpose) && (
+        <section className="section sec-grid">
+          <div className="sec-label"><Decode text="Purpose" />the problem, and who it's for</div>
+          <div className="prose"><p className="lead"><T v={p.purpose} /></p></div>
+        </section>
+      )}
 
       <section className="section sec-grid">
         <div className="sec-label"><Decode text="How it works" /></div>
@@ -74,14 +78,15 @@ export function ProjectDetail() {
             ))}
           </Reveal>
           <p className="muted" style={{ marginTop: 22, marginBottom: 8 }}>Tech stack</p>
-          <ul className="tags">{p.stack.map((s) => <li key={s} className={isTodo(s) ? 'todo' : ''}>{s.replace(/^TODO:?\s*/, '')}</li>)}</ul>
+          <ul className="tags">{p.stack.filter(has).map((s) => <li key={s} className={isTodo(s) ? 'todo' : ''}>{s.replace(/^TODO:?\s*/, '')}</li>)}</ul>
         </div>
       </section>
 
+      {challenges.length > 0 && (
       <section className="section sec-grid">
         <div className="sec-label"><Decode text="Challenges" />what went wrong, and the fix</div>
         <div className="prose">
-          {p.challenges.map((c, i) => (
+          {challenges.map((c, i) => (
             <div className="challenge" key={i}>
               <div className="q"><T v={c.problem} /></div>
               <div className="a"><T v={c.fix} /></div>
@@ -89,12 +94,13 @@ export function ProjectDetail() {
           ))}
         </div>
       </section>
+      )}
 
-      {p.results.length > 0 && (
+      {results.length > 0 && (
         <section className="section sec-grid">
           <div className="sec-label"><Decode text="Results" /></div>
           <div className="results">
-            {p.results.map((r, i) => (
+            {results.map((r, i) => (
               <div className="result" key={i}>
                 <div className="v">{isTodo(r.value) ? <span className="todo">number</span> : r.value}</div>
                 <div className="l">{r.label}</div>
@@ -104,10 +110,12 @@ export function ProjectDetail() {
         </section>
       )}
 
-      <section className="section sec-grid">
-        <div className="sec-label"><Decode text="What's next" /></div>
-        <div className="prose"><p><T v={p.next} /></p></div>
-      </section>
+      {has(p.next) && (
+        <section className="section sec-grid">
+          <div className="sec-label"><Decode text="What's next" /></div>
+          <div className="prose"><p><T v={p.next} /></p></div>
+        </section>
+      )}
 
       <section className="section">
         <div className="btns">

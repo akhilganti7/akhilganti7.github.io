@@ -91,8 +91,14 @@ export const useFx = () => useContext(FxContext)
 // "TODO: ..." strings render as visible placeholders so it's obvious what to fill in.
 export const isTodo = (s) => typeof s === 'string' && s.trim().startsWith('TODO')
 
+// "TODO:" boxes only show while you work on the site (npm run dev), never on the live site.
+export const SHOW_TODO = import.meta.env.DEV
+// True when a value should appear: it's filled in, or it's a TODO and we're in dev.
+export const has = (v) => v !== undefined && v !== null && v !== '' && (SHOW_TODO || !isTodo(v))
+
 export function T({ v, as: Tag = 'span', className = '' }) {
   if (v === undefined || v === null || v === '') return null
+  if (isTodo(v) && !SHOW_TODO) return null
   if (isTodo(v)) return <Tag className={`todo ${className}`}>{v.replace(/^TODO:?\s*/, '')}</Tag>
   return <Tag className={className}>{v}</Tag>
 }

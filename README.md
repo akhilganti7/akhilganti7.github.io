@@ -10,7 +10,7 @@ Features: dark and light themes, a Resume page with three scrollable resume prev
 
 Almost everything lives in **`src/data.js`**.
 
-- Anything starting with `TODO:` shows on the site as a **yellow dashed "fill in" box**, so you can see what's missing.
+- Anything starting with `TODO:` shows as a **yellow dashed "fill in" box** when you run the site on your computer (`npm run dev`), so you can see what's missing. On the live site, TODOs (and any section left empty) are hidden.
 - Links left as `''` are hidden automatically.
 - Lines marked `// CHECK` are guesses (mostly dates). Confirm them.
 

@@ -18,7 +18,7 @@ export default function Home() {
           <div>
             <p className="pitch">{SITE.pitch}</p>
             <ul className="hero-lines">
-              <li><span>accepted</span><span>{PAPER.short} at NeurIPS 2025 (CogInterp workshop) and ACL SiCon 2025</span></li>
+              <li><span>accepted</span><span>{PAPER.short} at NeurIPS 2025 (CogInterp workshop), ACL SiCon 2025, and more institutions internationally</span></li>
               <li><span>currently</span><span>{SITE.currently}</span></li>
               <li><span>open to</span><span>{SITE.openTo}</span></li>
             </ul>

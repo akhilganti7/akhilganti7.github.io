@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Decode, Reveal } from '../components/bits.jsx'
 import Bars from '../components/Bars.jsx'
 import { PAPER, OTHER_RESEARCH } from '../data.js'
-import { T, isTodo } from '../lib/fx.jsx'
+import { T, isTodo, has } from '../lib/fx.jsx'
 
 const METRICS = [
   { key: 'accuracy', label: 'Accuracy', max: 100, fmt: (v) => `${v.toFixed(1)}%` },
@@ -168,7 +168,7 @@ export default function Research() {
             <p className="muted" style={{ marginBottom: 8 }}>What I did</p>
             <ul className="did">{r.did.map((d, i) => <li key={i}><T v={d} /></li>)}</ul>
             <p className="muted" style={{ margin: '10px 0 8px' }}>Tools</p>
-            <ul className="tags">{r.tools.map((t) => <li key={t} className={isTodo(t) ? 'todo' : ''}>{t.replace(/^TODO:?\s*/, '')}</li>)}</ul>
+            <ul className="tags">{r.tools.filter(has).map((t) => <li key={t} className={isTodo(t) ? 'todo' : ''}>{t.replace(/^TODO:?\s*/, '')}</li>)}</ul>
             {r.result && (
               <>
                 <p className="muted" style={{ margin: '18px 0 8px' }}>Result</p>

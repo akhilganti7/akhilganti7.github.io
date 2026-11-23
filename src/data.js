@@ -13,7 +13,7 @@ export const SITE = {
   handle: 'akhil',
   pitch: 'I work where engineering meets finance: models, markets, and the data in between.',
   role: 'Engineering @ Western University',
-  currently: 'Engineering at Western, software engineer at MomentumMind Research',
+  currently: 'Engineering at Western University',
   openTo: 'Summer 2027 internships in finance, private equity, and software / ML', // CHECK
   email: 'akhilganti7@gmail.com',
   links: {
@@ -80,7 +80,7 @@ export const MILESTONES = [
 export const ABOUT = {
   intro: [
     "I'm an engineering student at Western University. I build systems that turn messy data into decisions people can act on, and I'm keen to explore where software systems collide with financial models, markets and the concepts behind them.",
-    'My work so far sits where engineering meets finance. I co-authored DecepBench, a multimodal deception-detection benchmark published at ACL SiCon 2025, and had the opportunity to travel to Vienna to present it at the Association for Computational Linguistics conference (ACL 2025). I validated over $1.8M in benefit payments as a Payments Analyst Intern at WSIB, I build software at MomentumMind Research, and I have experience in private equity and investment analysis from Arc Reactor Capital and Baird Augustine.',
+    'My work so far sits where engineering meets finance. I co-authored DecepBench, a multimodal deception-detection benchmark published at ACL SiCon 2025, and had the opportunity to travel to Vienna to present it at the Association for Computational Linguistics conference (ACL 2025). I validated over $1.8M in benefit payments as a Payments Analyst Intern at WSIB, I built software at MomentumMind Research, and I have experience in private equity and investment analysis from Arc Reactor Capital and Baird Augustine.',
   ],
   intersection: [
     'The same habits carry across both worlds. Define the problem tightly, measure what actually matters, and be honest about where a model or a deal can break.',
@@ -106,7 +106,7 @@ export const ABOUT = {
     },
   ],
   education: [
-    { name: 'Western University', detail: 'Bachelor of Engineering (Co-op). Western Scholarship of Distinction.', year: 'Sept 2025 – present' },
+    { name: 'Western University', detail: 'Bachelor of Engineering (Co-op), with Advanced Entry Opportunity (AEO) to the Ivey Business School. Western Scholarship of Distinction.', year: 'Sept 2025 – present' },
   ],
   leadership: [
     { name: 'Vice President of Finance, Telugu Student Union', detail: 'Executive board of a 300+ member cultural club.', year: 'Nov 2025 – present' }, // CHECK: Aug resume says Jun 2026
@@ -269,7 +269,7 @@ export const EXPERIENCE = [
     company: 'MomentumMind Research',
     title: 'Software Engineer',
     team: '',
-    dates: 'Feb 2026 – present',
+    dates: 'TODO: Feb 2026 – end month',
     summary: 'Building and shipping production software for a research firm in Mississauga (remote).',
     did: [
       'Built and deployed a scalable app with React, Tailwind CSS and Node.js.',
