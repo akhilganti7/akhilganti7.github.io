@@ -315,6 +315,50 @@ export const EXPERIENCE = [
 // ---------------------------------------------------------------------
 export const PROJECTS = [
   {
+    slug: 'western-exam-parking',
+    name: 'Western Exam Parking',
+    status: 'Live',
+    year: 'Nov 2026',
+    oneLiner: 'A web app for Western University students without a parking permit. Pick your exam building and time, and it finds the closest visitor lot you\'re allowed to use, what it costs, and your real walking route on a campus map.',
+    purpose: 'During exams, students without a permit guess which visitor lots they can use and how far the walk is. Guess wrong and it\'s a ticket or a late start. This app ranks 38 visitor lots and street spots for your exact exam window, covers 83 exam buildings from Western\'s official building list, and works on phone, iPad and desktop, with one-tap driving and walking directions.',
+    role: 'TODO: your role (solo?)',
+    flow: ['OpenStreetMap data, cleaned by a Python + shapely pipeline', 'One ~530 KB campus map, drawn as a zoomable SVG', 'Rules engine checks every lot against your exam window', 'Dijkstra finds the real walking route, in the browser'],
+    stack: ['JavaScript', 'HTML/CSS', 'SVG', 'OpenStreetMap', 'Dijkstra / graph algorithms', 'Python', 'shapely', 'Playwright', 'GitHub Pages'],
+    challenges: [
+      {
+        problem: 'Every lot has its own rules: some only open after 4 pm, some have daily maximums, Social Science has a 2-hour limit, weekends are different, and some street spots are Honk pay zones.',
+        fix: 'Built a rules engine that checks each lot against your exact exam window before ranking it, then shows a timeline of when to park and arrive, plus filters for EV chargers, free only, max walk and max cost.',
+      },
+      {
+        problem: 'Raw OpenStreetMap data isn\'t ready to draw or route on, and the whole campus map had to load fast on a phone.',
+        fix: 'A Python + shapely pipeline turns it into one ~530 KB map file, drawn as a single zoomable SVG.',
+      },
+      {
+        problem: 'Every exam building needs a walking route to every lot: over 3,000 routes across a network of about 10,800 points, without a server.',
+        fix: 'Dijkstra\'s algorithm with a binary heap, running in the browser, computes all of them in about 0.25 s.',
+      },
+      {
+        problem: 'Some walking routes fell back to straight lines instead of following campus paths.',
+        fix: 'Traced it to distances stored as 32-bit floats losing precision. Switched to 64-bit, and the routes follow the real paths again.',
+      },
+    ],
+    results: [
+      { value: '38', label: 'Visitor lots and street spots ranked for your exam window' },
+      { value: '83', label: 'Exam buildings, from Western\'s official building list' },
+      { value: '~0.25 s', label: 'To compute all 3,000+ building-to-lot walking routes, in the browser' },
+      { value: '~530 KB', label: 'Campus map file, built from raw OpenStreetMap data' },
+    ],
+    next: 'TODO: what you would add next.',
+    // Screenshots live in src/assets/projects/. They show on this project's case-study page.
+    tagline: 'Park close. Ace the exam.',
+    images: [
+      { file: 'western-exam-parking.webp', w: 1200, h: 630, alt: 'Western Exam Parking on desktop: exam building, day, start time and length pickers above a campus map with the walking route to the Social Science visitor lot, and a card showing a 1 minute walk and a $21.00 cost.' },
+      { file: 'western-exam-parking-phone.webp', w: 390, h: 844, alt: 'Western Exam Parking on a phone: the best-spot card for the Social Science lot with walk time, cost and a park-to-exam timeline, and buttons for driving and walking directions.', phone: true },
+    ],
+    linkLabels: { github: 'Code' },
+    links: { demo: 'https://akhilganti7.github.io/western-exam-parking/', github: 'https://github.com/akhilganti7/western-exam-parking', huggingface: '' },
+  },
+  {
     slug: 'portfolio',
     name: 'Market Terminal Portfolio',
     status: 'Live',

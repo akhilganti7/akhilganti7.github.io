@@ -5,6 +5,10 @@ import NotFound from './NotFound.jsx'
 import { PROJECTS } from '../data.js'
 import { T, isTodo, has } from '../lib/fx.jsx'
 
+// Project screenshots (src/assets/projects/), listed per project in data.js as images: [{ file, w, h, alt, phone }].
+const SHOTS = import.meta.glob('../assets/projects/*.{webp,png,jpg}', { eager: true, query: '?url', import: 'default' })
+const shotUrl = (f) => SHOTS[`../assets/projects/${f}`]
+
 const statusClass = (s) => (s === 'Concept' ? 'concept' : s === 'In progress' ? 'progress' : '')
 
 export function Projects() {
@@ -35,7 +39,8 @@ export function ProjectDetail() {
   const p = PROJECTS.find((x) => x.slug === slug)
   if (!p) return <NotFound />
   const links = Object.entries(p.links).filter(([, v]) => v)
-  const label = { github: 'GitHub', demo: 'Live demo', huggingface: 'Hugging Face' }
+  const label = { github: 'GitHub', demo: 'Live demo', huggingface: 'Hugging Face', ...(p.linkLabels || {}) }
+  const shots = (p.images || []).filter((s) => shotUrl(s.file))
   const challenges = p.challenges.filter((c) => has(c.problem))
   const results = p.results.filter((r) => has(r.value))
 
@@ -58,6 +63,19 @@ export function ProjectDetail() {
           </div>
         )}
       </header>
+
+      {shots.length > 0 && (
+        <section className="section sec-grid">
+          <div className="sec-label"><Decode text="Preview" />{p.tagline || 'the app in use'}</div>
+          <div className={`shots ${shots.some((s) => s.phone) ? 'has-phone' : ''}`}>
+            {shots.map((s) => (
+              <figure key={s.file} className={`shot ${s.phone ? 'phone' : ''}`}>
+                <img src={shotUrl(s.file)} alt={s.alt} width={s.w} height={s.h} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
 
       {has(p.purpose) && (
         <section className="section sec-grid">
